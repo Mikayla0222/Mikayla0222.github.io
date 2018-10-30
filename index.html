@@ -1,18 +1,19 @@
-<body background = "https://i.ytimg.com/vi/MLX2wLdHrYU/maxresdefault.jpg">
-<h1>
-Mikayla Smith 
-</h1> 
-<h2>
-About Me:
-</h2>
-<p>
-	My name is Mikayla Smith, I am a 9th grader at Woodward Academy. My favoite subjects are math, art, and robotics. 
-</p>
-<h2>
-My Favoite...
-</h2>
-<button id="color">color</button>
-<button id="movie">Movie</button>
-<button id="book">Book</button>
-<button id="number">Number</button>
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-assets>
+                <a-asset-item id="object" src="objects/tinker.obj"></a-asset-item>
+                <a-asset-item id="material" src="objects/obj.mtl"></a-asset-item>
+            </a-assets>
+            <a-entity obj-model="obj: #object; mtl: #material" position="-2 1.2 -2" scale="1 1 1">
+                
+            </a-entity>
+             <!--<a-obj-model src="#object" src="#material"></a-obj-model>-->
+        </a-scene>
+
+    </body>
+</html>
