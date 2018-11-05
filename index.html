@@ -6,14 +6,18 @@
     <body>
         <a-scene>
             <a-assets>
-                <a-asset-item id="f.object" src="objects/tinker.obj"></a-asset-item>
-                <a-asset-item id="f.material" src="objects/obj.mtl"></a-asset-item>
+                <a-asset-item id="redo" src="objects/red.obj"></a-asset-item>
+                <a-asset-item id="redm" src="objects/red.mtl"></a-asset-item>
             </a-assets>
-            <a-entity obj-model="obj: #f.object; mtl: #f.material" position="-2 -2 -2" scale="1 1 1" rotation="0 0 0">
-                
+            <a-entity obj-model="obj: #redo; mtl: #redm" position="-5 -5 -5" scale="1 1 1" rotation="0 0 0">
             </a-entity>
-             <!--<a-obj-model src="#object" src="#material"></a-obj-model>-->
-        </a-scene>
+             
+            <a-assets>
+                <a-asset-item id="blueo" src="objects/blue.obj"></a-asset-item>
+                <a-asset-item id="bluem" src="objects/blue.mtl"></a-asset-item>
+            </a-assets>
+            <a-entity obj-model="obj: #blueo; mtl: #bluem" position="-2 -2 -2" scale="1 1 1" rotation="0 0 0">
+            </a-entity>
 
     </body>
 </html>
