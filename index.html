@@ -13,7 +13,7 @@
                 <a-asset-item id="swordm" src="objects/obj.mtl"></a-asset-item>
                 <a-mixin id="spinAnimation" animation="property: object3D.rotation.y; to: 360; loop: true; easing: linear; dur: 96000"></a-mixin>
             </a-assets>
-            <a-entity obj-model="obj: #swordo; mtl: #swordm" position="0 1 -1"  scale="0.05 0.05 0.05" rotation="-90 0 0" mixin = #spinAnimation>
+            <a-entity obj-model="obj: #swordo; mtl: #swordm" position="0 1 -1"  scale="0.05 0.05 0.05" rotation="-90 0 0" mixin = "spinAnimation">
            
             </a-entity>
             
